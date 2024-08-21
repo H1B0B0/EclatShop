@@ -68,8 +68,12 @@ Use Docker Compose to orchestrate these services. This script will set up each s
 - **Loïc Bravo**
 - **Sébastien OGE**
 
-## Screenshot
+## Preview
+
+### Home
 
 ![home.png](images/home.png)
 
-[Watch the video](video/screenvideo.mov)
+### Shop
+
+https://drive.google.com/file/d/1PZyjjLWGN1XGjszZ-jO77o3HCETA23lS/view?usp=sharing
