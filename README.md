@@ -17,21 +17,23 @@ Before you begin, ensure you have the following installed:
 To clone the repository and start setting up the project, use the following command in your terminal:
 
 Step 1 : Clone the repository
-```git clone https://repository.git```
+`git clone https://repository.git`
 
 Step 2: Set up the .env configurations. Add one .env file at the root directory and another within the app directory.
-```cd app/```
- 
+`cd app/`
+
 Step 2: Launch Docker and enter the following command.
-```docker compose up -d --build```
+`docker compose up -d --build`
 
 ## API Reference
 
 ### Users
+
 - **Register a User**: `POST /api/register` - Creates a new user account.
 - **User Login**: `POST /api/login` - Authenticates a user and returns an authorization token.
 
 ### Products
+
 - **List Products**: `GET /api/products` - Retrieves all products.
 - **Single Product**: `GET /api/products/{productId}` - Fetches details of a specific product.
 - **Add Product**: `POST /api/products` - Adds a new product to the system (Authentication required).
@@ -39,12 +41,14 @@ Step 2: Launch Docker and enter the following command.
 - **Delete Product**: `DELETE /api/products/{productId}` - Removes a product from the system (Authentication required).
 
 ### Cart
+
 - **Add to Cart**: `POST /api/carts/{productId}` - Adds a product to the user's shopping cart (Authentication required).
 - **Remove from Cart**: `DELETE /api/carts/{productId}` - Removes a product from the cart (Authentication required).
 - **View Cart**: `GET /api/carts` - Displays all items in the shopping cart (Authentication required).
 - **Validate Cart**: `POST /api/carts/validate` - Converts the cart into an order (Authentication required).
 
 ### Orders
+
 - **View Orders**: `GET /api/orders` - Retrieves all orders associated with the current user (Authentication required).
 - **Order Details**: `GET /api/orders/{orderId}` - Provides detailed information about a specific order (Authentication required).
 
@@ -59,6 +63,13 @@ Deployment is handled using Docker, which simplifies the process into manageable
 Use Docker Compose to orchestrate these services. This script will set up each service in its container, ensuring they are interconnected and configured correctly.
 
 ## Contributors
+
 - **Etienne Mentrel**
 - **Loïc Bravo**
 - **Sébastien OGE**
+
+## Screenshot
+
+![home.png](images/home.png)
+
+[Watch the video](video/screenvideo.mov)
